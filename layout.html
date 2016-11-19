@@ -6,66 +6,57 @@
 	<meta charset="utf-8">
 	<style type="text/css">
 		
+		#container
+			{
+				margin-right:auto; /*center container with margins left & right set to auto*/
+				margin-left:auto;
+				width:960px;	/*to center an element it must have a width*/
+				border-radius: 10px;
+				padding: 10px;
+				font-size: 0; /* for inline-block spacing issues*/
+			}
+			.box{
+				display:block;
+				width: 100%;
+				background-color: #cafd32;
+				margin-bottom: 10px;
+				border-radius: 10px;
+				font-family: Roboto;
+				font-size: 20px;
+				text-align: center;
+				padding: 30px 0;
+			}
+			#sidebar{
+				/*add vendor prefixes to make sure box-sizing works on all browserd*/
+				-webkit-box-sizing: border-box;
+   				-moz-box-sizing: border-box;
+    			box-sizing: border-box;;
+				display: inline-block;
+				width:470px;
+				margin-right: 10px;
+				padding-left: 40px;/*add padding to center text using longhand method*/
+				padding-right: 40px;
+				border:solid 1px #000;/*create a black solid border of 1px*/
+			}
+			#content{
+				/*add vendor prefixes to make sure box-sizing works on all browserd*/
+				-webkit-box-sizing: border-box;
+   				-moz-box-sizing: border-box;
+    			box-sizing: border-box;;
+				display: inline-block;
+				width:470px;
+				margin-left: 10px;
+				padding-left: 40px;/*add padding to center text using longhand method*/
+				padding-right: 40px;
+				border:solid 1px #000;/*create a black solid border of 1px*/
+			}
+			p{
+				padding-bottom: 50px;
+			}
+
+
+			
 		
-		#container{
-			margin-left: auto; /*used for centering elements*/
-			margin-right: auto; /*used for centering elements*/
-			width: 960px;
-			padding: 10px;
-			border-radius: 10px;
-			font-size: 0;
-			display: block;
-			font-family: 'Roboto', sans-serif;
-		}
-
-		.box{
-			display:block;
-			width: 100%;
-			height: 150px;
-			background-color:#FD8D32;
-			margin-bottom: 10px;
-			border-radius: 10px;
-			font-family: Roboto;
-			font-size: 16px;
-			text-align: center;
-			padding:30px 0;
-			
-			
-		}
-
-		#sidebar{
-			display: inline-block;
-			margin: 10px 10px 10px 0;
-			width: 32.291667%; /*310px divided by 930 (container) gives percentage*/
-			height: 320px;
-			padding-left: 20px;
-			padding-right: 20px;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			
-		}
-
-		#content{
-			display: inline-block;
-			float: right;
-			width: 65.625%; /*630px divided by 930 (container) gives percentage*/     
-			height:320px;
-			margin:10px 0 10px 10px;
-			padding-left: 20px;
-			padding-right: 20px;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			
-		}
-
-		
-
-		h1 p{
-			text-align: center;
-			
-		}
 	</style>
 </head>
 <body>
