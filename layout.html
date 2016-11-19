@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		#container{
+			margin-left: auto; /*used for centering elements*/
+			margin-right: auto; /*used for centering elements*/
+			width: 960px;
+			padding: 10px;
+			border-radius: 10px;
+			font-size: 0;
+			display: block;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		#sidebar{
+			display: inline-block;
+			float:left;
+			width: 32.291667%; /*310px divided by 930 (container) gives percentage*/
+			margin: 10px 10px 10px 0;
+			height: 320px;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		#content{
+			display: inline-block;
+			float: right;
+			width: 65.625%; /*630px divided by 930 (container) gives percentage*/     
+			margin:10px 0 10px 10px;
+			height:320px;
+		}
+
+		.box{
+			width: 100%;
+			height: 150px;
+			background-color:#FD8D32;
+			display:inline-block;
+			text-align: center;
+			font-size: 16px;
+			border-radius: 10px;
+		}
+
+		h1 p{
+			text-align: center;
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="box" id="header"> 
+			<h1>Header</h1> 
+		</div>
+		<div class="box" id="sidebar"> 
+			<h1>Sidebar</h1 >
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum massa pulvinar lacus iaculis hendrerit. Proin condimentum euismod tortor, a vestibulum ante consequat sit amet. Pellentesque nec dignissim sem. Etiam at turpis ut est lobortis iaculis. Morbi cursus rhoncus turpis nec hendrerit. In tristique varius ligula, at convallis mauris sodales eu. Vivamus pharetra magna in dictum eleifend.</p>
+		</div>
+		<div class="box" id="content"> 
+			<h1>Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum massa pulvinar lacus iaculis hendrerit. Proin condimentum euismod tortor, a vestibulum ante consequat sit amet. Pellentesque nec dignissim sem. Etiam at turpis ut est lobortis iaculis. Morbi cursus rhoncus turpis nec hendrerit. In tristique varius ligula, at convallis mauris sodales eu. Vivamus pharetra magna in dictum eleifend.</p> 
+		</div>
+		<div class="box" id="footer"> 
+			<h1>Footer</h1> 
+		</div>
+	</div>
+	
+</body>
+</html>
