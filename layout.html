@@ -13,11 +13,15 @@
 				width:960px;	/*to center an element it must have a width*/
 				border-radius: 10px;
 				padding: 10px;
+				padding-top:200px;
 				font-size: 0; /* for inline-block spacing issues*/
+
+				
 			}
+
 			.box{
-				display:block;
-				width: 100%;
+				position:relative;
+				width:100%;
 				background-color: #cafd32;
 				margin-bottom: 10px;
 				border-radius: 10px;
@@ -26,7 +30,20 @@
 				text-align: center;
 				padding: 30px 0;
 			}
-			#sidebar{
+
+			#header{
+				top:0px;
+				
+				width: 960px;
+				position: fixed;
+				border: 1px dashed #000;
+				z-index: 100;
+				
+    			
+
+			}
+			
+			.sidebar{
 				/*add vendor prefixes to make sure box-sizing works on all browserd*/
 				-webkit-box-sizing: border-box;
    				-moz-box-sizing: border-box;
@@ -34,13 +51,13 @@
 				display: inline-block;
 				width:470px;
 				margin-right: 10px;
-				padding-left: 40px;/*add padding to center text using longhand method*/
-				padding-right: 40px;
+				padding-left: 10px;/*add padding to center text using longhand method*/
+				padding-right: 10px;
 				/*border:solid 1px #000;/*create a black solid border of 1px*/
 				position: relative;
 
 			}
-			#content{
+			.content{
 				/*add vendor prefixes to make sure box-sizing works on all browserd*/
 				-webkit-box-sizing: border-box;
    				-moz-box-sizing: border-box;
@@ -48,11 +65,13 @@
 				display: inline-block;
 				width:470px;
 				margin-left: 10px;
-				padding-left: 40px;/*add padding to center text using longhand method*/
-				padding-right: 40px;
+				padding-left: 10px;/*add padding to center text using longhand method*/
+				padding-right: 10px;
 				position: relative;
 				/*border:solid 1px #000;/*create a black solid border of 1px*/
 			}
+
+			
 
 			#linkToTop{
 				position: absolute;
@@ -82,12 +101,22 @@
 		<div class="box" id="header"> 
 			<h1>Header</h1> 
 		</div>
-		<div class="box" id="sidebar"> 
+		<div class="box sidebar"> 
 			<h1>Sidebar</h1 >
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum massa pulvinar lacus iaculis hendrerit. Proin condimentum euismod tortor, a vestibulum ante consequat sit amet. Pellentesque nec dignissim sem. Etiam at turpis ut est lobortis iaculis. Morbi cursus rhoncus turpis nec hendrerit. In tristique varius ligula, at convallis mauris sodales eu. Vivamus pharetra magna in dictum eleifend.</p>
-			<img src="arrow.png" atl="Back To Top" id="sideLinkToTop">
 		</div>
-		<div class="box" id="content"> 
+		<div class="box content"> 
+			<h1>Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum massa pulvinar lacus iaculis hendrerit. Proin condimentum euismod tortor, a vestibulum ante consequat sit amet. Pellentesque nec dignissim sem. Etiam at turpis ut est lobortis iaculis. Morbi cursus rhoncus turpis nec hendrerit. In tristique varius ligula, at convallis mauris sodales eu. Vivamus pharetra magna in dictum eleifend.</p> 
+			
+		</div>
+
+		<div class="box sidebar"> 
+			<h1>Sidebar</h1 >
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum massa pulvinar lacus iaculis hendrerit. Proin condimentum euismod tortor, a vestibulum ante consequat sit amet. Pellentesque nec dignissim sem. Etiam at turpis ut est lobortis iaculis. Morbi cursus rhoncus turpis nec hendrerit. In tristique varius ligula, at convallis mauris sodales eu. Vivamus pharetra magna in dictum eleifend.</p>
+			
+		</div>
+		<div class="box content"> 
 			<h1>Content</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum massa pulvinar lacus iaculis hendrerit. Proin condimentum euismod tortor, a vestibulum ante consequat sit amet. Pellentesque nec dignissim sem. Etiam at turpis ut est lobortis iaculis. Morbi cursus rhoncus turpis nec hendrerit. In tristique varius ligula, at convallis mauris sodales eu. Vivamus pharetra magna in dictum eleifend.</p> 
 			<img src="arrow.png" atl="Back To Top" id="linkToTop">
