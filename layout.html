@@ -6,6 +6,12 @@
 	<meta charset="utf-8">
 	<style type="text/css">
 		
+		body{
+			background-image: url(disposable1.jpg);
+			background-size: cover;
+		}
+
+
 		#container
 			{
 				margin-right:auto; /*center container with margins left & right set to auto*/
@@ -13,7 +19,7 @@
 				width:960px;	/*to center an element it must have a width*/
 				border-radius: 10px;
 				padding: 10px;
-				padding-top:200px;
+				/*padding-top:200px;*/
 				font-size: 0; /* for inline-block spacing issues*/
 
 				
@@ -32,13 +38,11 @@
 			}
 
 			#header{
-				top:0px;
-				
-				width: 960px;
-				position: fixed;
-				border: 1px dashed #000;
-				z-index: 100;
-				
+				top: 0px;
+				right: 0px;
+				/*position: fixed; /*must be fixed to keep header in position*/
+				border: 2px dashed #000;
+				z-index: 100;	/* z-index*/
     			
 
 			}
